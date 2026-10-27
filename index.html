@@ -905,6 +905,7 @@ function loop() {
   draw();
   requestAnimationFrame(loop);
 }
+resetGrid(); // 启动时初始化地图，避免首帧读取空 grid
 updateHud();
 loop();
 </script>
